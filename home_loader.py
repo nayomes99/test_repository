@@ -2,7 +2,7 @@ import sys
 from PyQt5.QtWidgets import QApplication, QMainWindow, QMessageBox
 
 from home import Ui_MainWindow
-from Main_data_loader import DataLoaderApp   # <-- your data loader window
+from Main_data_loader_v2 import DataLoaderApp   # <-- your data loader window
 
 
 class HomeApp(QMainWindow):
@@ -26,7 +26,7 @@ class HomeApp(QMainWindow):
 
     # ---------- FUNCTIONS ----------
     def database_extract(self):
-        QMessageBox.information(self, "Info", "Database Extract clicked")
+        #QMessageBox.information(self, "Info", "Database Extract clicked")
 
     def database_load(self):
         """
@@ -36,16 +36,16 @@ class HomeApp(QMainWindow):
         self.child_window.show()
 
     def file_conversion(self):
-        QMessageBox.information(self, "Info", "File Conversion clicked")
+        #QMessageBox.information(self, "Info", "File Conversion clicked")
 
     def adhoc_extract(self):
-        QMessageBox.information(self, "Info", "Adhoc Database Extract clicked")
+        #QMessageBox.information(self, "Info", "Adhoc Database Extract clicked")
 
     def adhoc_load(self):
-        QMessageBox.information(self, "Info", "Adhoc Database Load clicked")
+        #QMessageBox.information(self, "Info", "Adhoc Database Load clicked")
 
     def adhoc_file_conversion(self):
-        QMessageBox.information(self, "Info", "Adhoc File Conversion clicked")
+        #QMessageBox.information(self, "Info", "Adhoc File Conversion clicked")
 
 
 if __name__ == "__main__":

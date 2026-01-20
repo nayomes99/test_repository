@@ -2,7 +2,7 @@ import sys
 from PyQt5.QtWidgets import (
     QApplication, QMainWindow, QMessageBox
 )
-from data_loader import Ui_MainWindow   # <-- your UI file name
+from data_loader_v1 import Ui_MainWindow   # <-- your UI file name
 
 
 class DataLoaderApp(QMainWindow):
